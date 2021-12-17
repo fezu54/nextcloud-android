@@ -76,9 +76,11 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
+        android:exported="true"
         android:theme="@style/Theme.ownCloud.Toolbar"
         android:usesCleartextTraffic="true"
-        tools:ignore="UnusedAttribute">
+        tools:ignore="UnusedAttribute"
+        android:allowBackup="true">
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -400,7 +402,8 @@
             android:exported="true" />
         <activity
             android:name="com.nextcloud.client.onboarding.WhatsNewActivity"
-            android:theme="@style/Theme.ownCloud.noActionBar.Login" />
+            android:theme="@style/Theme.ownCloud.noActionBar.Login"
+            android:exported="false"/>
         <activity
             android:name="com.nextcloud.client.onboarding.FirstRunActivity"
             android:configChanges="orientation|screenSize"
